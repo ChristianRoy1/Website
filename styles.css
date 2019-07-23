@@ -27,3 +27,120 @@ img {
 }
 
 /* CSS Styles */
+
+// Colors
+
+$Grey5: #18232e;
+$Grey4: #546575;
+$Grey3: #d7dce2;
+$Grey2: #e8ecf0;
+$Grey1: #f3f5f7;
+$Purple1: #746eca;
+$Purple2: #4c46a2;
+
+// CSS
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "calibri", sans-serif;
+  background-color: $Grey2;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  }
+
+.navbar {
+  height: 60px;
+  background-color: $Grey1;
+  border-bottom: 1px solid $Grey3;
+}
+
+.form {
+  border-radius: 4px;
+  text-align: center;
+  padding: 18px 0px;
+  margin: 0px auto;
+  width: 400px;
+}
+
+.mainForm {
+  background-color: white;
+  margin-top: 120px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.15s;
+}
+
+.mainForm:hover {
+  box-shadow: 0px 40px 80px rgba(0,0,0,0.05);
+  transform: translateY(-3px);
+}
+
+h2 {
+  font-weight: 500;
+  color: $Grey4;
+}
+
+.mainForm input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 4px;
+  border: solid 1px $Grey3;
+  background-color: $Grey1;
+  color: #73818f;
+  font-size: 16px;
+  width: 320px;
+}
+
+.mainForm input:focus {
+  border: solid 1px $Purple1;
+  outline: none;
+}
+
+.btn {
+  background-color: $Purple1;
+  color: white;
+  width: 342px;
+  max-width: 100%;
+  margin: 0px auto;
+  margin-bottom: 6px;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all .15s;
+}
+
+.btn:hover {
+  // background-image: linear-gradient(to right, #4c46a2, #7b73e9);
+  background-color: #4c46a2;
+}
+
+.userHelp {
+  margin-top: 20px;
+  background-color: #dfe4e9;
+  color: $Grey4;
+  transition: all .15s;
+}
+
+.userHelp:hover {
+  background-color: $Grey3;
+  width: 410px;
+}
+
+.pStrong {
+  font-weight: 1000;
+  color: $Grey5;
+  text-decoration: none;
+}
+
+.pStrong:hover {
+  text-decoration: underline;
+}
