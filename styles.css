@@ -28,119 +28,135 @@ img {
 
 /* CSS Styles */
 
-// Colors
-
-$Grey5: #18232e;
-$Grey4: #546575;
-$Grey3: #d7dce2;
-$Grey2: #e8ecf0;
-$Grey1: #f3f5f7;
-$Purple1: #746eca;
-$Purple2: #4c46a2;
-
-// CSS
 * {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  color: #444;
 }
 
 a {
   text-decoration: none;
 }
 
-html {
-  font-family: "calibri", sans-serif;
-  background-color: $Grey2;
+.container {
   width: 100%;
-  margin: 0px;
-  padding: 0px;
-  }
-
-.navbar {
-  height: 60px;
-  background-color: $Grey1;
-  border-bottom: 1px solid $Grey3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  background-color: #ffffff;
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(0,853,409)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 
-.form {
-  border-radius: 4px;
-  text-align: center;
-  padding: 18px 0px;
-  margin: 0px auto;
-  width: 400px;
-}
-
-.mainForm {
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
-  margin-top: 120px;
-  border-radius: 4px;
+  border-radius: 8px;
+/*   padding: 50px; */
+  padding-bottom: 0px;
+  transition: all 0.5s;
+  box-shadow: 0px 6px 20px rgba(0,0,0,.1);
+/*   animation: 0.5s ease-out 0s 1 slideDown; */ 
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: slategrey;
+  background-image: url("https://source.unsplash.com/random/120x120");
+  position: relative; 
+  top: -40px;
+  margin: 0;
+/*   animation: 0.5s ease-out 0.5s 1 slideUp; */
   transition: all ease-in-out 0.15s;
+/*   transition-delay: 0.3s; */
+  filter: grayscale(60%);
 }
 
-.mainForm:hover {
-  box-shadow: 0px 40px 80px rgba(0,0,0,0.05);
-  transform: translateY(-3px);
+.card:hover {
+  box-shadow: 0px 4px 6px rgba(0,0,0,.1);
 }
 
-h2 {
-  font-weight: 500;
-  color: $Grey4;
+.card:hover .avatar {
+  top: -50px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+  filter: grayscale(0%);
 }
 
-.mainForm input {
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 4px;
-  border: solid 1px $Grey3;
-  background-color: $Grey1;
-  color: #73818f;
-  font-size: 16px;
-  width: 320px;
+.card:hover .fine {
+  opacity: 1;
+  transform: translateY(-16px);
 }
 
-.mainForm input:focus {
-  border: solid 1px $Purple1;
-  outline: none;
-}
-
-.btn {
-  background-color: $Purple1;
-  color: white;
-  width: 342px;
-  max-width: 100%;
-  margin: 0px auto;
-  margin-bottom: 6px;
-  padding: 10px 0;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  transition: all .15s;
-}
-
-.btn:hover {
-  // background-image: linear-gradient(to right, #4c46a2, #7b73e9);
-  background-color: #4c46a2;
-}
-
-.userHelp {
-  margin-top: 20px;
-  background-color: #dfe4e9;
-  color: $Grey4;
-  transition: all .15s;
-}
-
-.userHelp:hover {
-  background-color: $Grey3;
-  width: 410px;
-}
-
-.pStrong {
-  font-weight: 1000;
-  color: $Grey5;
-  text-decoration: none;
-}
-
-.pStrong:hover {
+.fine {
+  font-size: 12px;
+  color: #d1d1d1;
   text-decoration: underline;
+  position: relative;
+  top: -24px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.fine:hover {
+  color: #888;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  top: -14px;
+  cursor: default;
+}
+
+.input {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  margin: 8px;
+  padding: 12px 60px;
+  border-radius: 40px;
+  color: #bbb;
+  transition: all ease-in-out 0.2s;
+  cursor: text;
+}
+
+.input:hover {
+  filter: brightness(104%);
+  border: 1px solid #e1e1e1;
+}
+
+.button {
+  background-color: steelblue;
+  color: rgba(255,255,255,.8);
+/*   border: 1px solid #f1f1f1; */
+  margin-top: 24px;
+  padding: 12px 120px;
+  border-radius: 0 0 6px 6px;
+  transition: all ease-in-out 0.1s;
+  font-weight: 700;
+/*     outline: 1px solid slategrey; */
+}
+
+.button:hover {
+  color: rgba(255,255,255,1);
+  filter: brightness(110%);
+}
+
+.button:active {
+  color: rgba(255,255,255,1);
+  filter: brightness(90%);
 }
