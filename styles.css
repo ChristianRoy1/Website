@@ -6,6 +6,13 @@ html,body,div,span, h1, h2, p {
 /*   outline: 1px solid red; */
 }
 
+/* MEDIA QUERY */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    transform: scale(1.5);
+}
+
 /* STYLES */
 html {
   font-family: 'Lato', sans-serif;
@@ -44,6 +51,7 @@ h2 {
 .divider {
   width: 3px;
   height: 20%;
+  min-height: 40px;
   border-radius: 50px;
   background-color: hsla(211, 20%, 50%, 0.1);
   margin: 0px 40px;
