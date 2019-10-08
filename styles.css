@@ -12,7 +12,9 @@ html,body,div,span, h1, h2, p {
 	only screen and (-o-min-device-pixel-ratio: 13/10),
 	only screen and (min-resolution: 120dpi)
 	{
+		body {flex-direction: column;}
 		.title, .subtitle {transform: scale(1.5);}
+		.divider {transform: rotate(90deg);}
 	}
 
 /* STYLES */
