@@ -13,7 +13,7 @@ html,body,div,span, h1, h2, p {
 	only screen and (min-resolution: 120dpi)
 	{
 		body {flex-direction: column;}
-		.title, .subtitle {transform: scale(1.5);}
+		.title, .subtitle {transform: scale(2);}
 		.divider {
 			transform: rotate(90deg);
 			animation: 700ms ease-in-out 0s 1 fadeDown;
