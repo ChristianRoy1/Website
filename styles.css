@@ -12,7 +12,7 @@ html,body,div,span, h1, h2, p {
 	only screen and (-o-min-device-pixel-ratio: 13/10),
 	only screen and (min-resolution: 120dpi)
 	{
-		body {transform: scale(2);}
+		body {transform: scale(1.5);}
 	}
 
 /* STYLES */
