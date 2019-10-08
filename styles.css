@@ -60,10 +60,11 @@ h2 {
 
 .subtitle i {
   font-size: 20px;
-  background-color: #1089ff;
+  background-color: white;
+  border: 2px solid #1089ff;
   padding: 8px;
   border-radius: 50px;
-  color: white;
+  color: #1089ff;
   transition: all 100ms;
   animation: 600ms ease-in-out 0s 1 fadeDown;
 }
