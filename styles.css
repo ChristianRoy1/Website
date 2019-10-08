@@ -10,7 +10,7 @@ html,body,div,span, h1, h2, p {
 @media 
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
-    transform: scale(2);
+    transform: scale(4);
 }
 
 /* STYLES */
